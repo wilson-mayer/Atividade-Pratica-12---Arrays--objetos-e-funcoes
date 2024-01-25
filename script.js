@@ -52,6 +52,9 @@ let soma = data.reduce((acc, cur)=> acc + cur.salario, somaSalarios,);
 console.log(soma);
 
 // 4. Imprima no console a média do salário de todas as pessoas.
+let media = soma / (data.length);
+console.log(media.toFixed(2));
+
 // 5. Imprima no console a soma do salário de todos as pessoas do sexo
 // Masculino
 // 6. Imprima no console a média do salário de todas as pessoas do sexo
