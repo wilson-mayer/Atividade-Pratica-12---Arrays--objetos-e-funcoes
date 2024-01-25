@@ -84,4 +84,9 @@ console.log(posicaoPessoa);
 
 // 9. Utilize a função filter, para filtrar todas pessoas que o nome possua o
 // sobrenome "Silva".
+let sobrenomeSilva = data.filter(pessoa => pessoa.nome.includes('Silva'));
+console.log(sobrenomeSilva);
+
 // 10. Imprima os nomes utilizando o MAP
+let nomes = data.map(pessoa => pessoa.nome);
+console.log(nomes);
