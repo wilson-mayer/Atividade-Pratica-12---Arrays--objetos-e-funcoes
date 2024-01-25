@@ -39,9 +39,18 @@ const data = [
 
     
 // 1. Imprima no console a quantidade de pessoas Total.
+console.log(data.length);
+
 // 2. Imprima no console a quantidade de pessoas pessoas do sexo
 // Feminino.
+let feminino = data.filter((imprimir)=> imprimir.sexo === 'F');
+console.log(feminino.length);
+
 // 3. Imprima no console a soma do salário de todas as pessoas.
+let somaSalarios = 0
+let soma = data.reduce((acc, cur)=> acc + cur.salario, somaSalarios,);
+console.log(soma);
+
 // 4. Imprima no console a média do salário de todas as pessoas.
 // 5. Imprima no console a soma do salário de todos as pessoas do sexo
 // Masculino
