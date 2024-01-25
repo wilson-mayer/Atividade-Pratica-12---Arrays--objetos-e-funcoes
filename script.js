@@ -79,6 +79,9 @@ console.log(data.some(salarioSuperioraSete));
 
 // 8. Utilize a função findIndex, para descobrir a posição da pessoa de
 // nome 'Eva Trindade'.
+let posicaoPessoa = data.findIndex((pessoa) => pessoa.nome === 'Eva Trindade');
+console.log(posicaoPessoa);
+
 // 9. Utilize a função filter, para filtrar todas pessoas que o nome possua o
 // sobrenome "Silva".
 // 10. Imprima os nomes utilizando o MAP
