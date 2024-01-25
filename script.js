@@ -74,6 +74,9 @@ console.log(mediaSalarioMasculino.toFixed(2));
 // 7. Utilize a função Some, para descobrir se existe algum salário
 // superior a R$ 7.000, imprima verdadeiro no console caso exista, caso
 // contrário falso.
+let salarioSuperioraSete = (sete) => sete > 7000;
+console.log(data.some(salarioSuperioraSete));
+
 // 8. Utilize a função findIndex, para descobrir a posição da pessoa de
 // nome 'Eva Trindade'.
 // 9. Utilize a função filter, para filtrar todas pessoas que o nome possua o
