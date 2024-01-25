@@ -57,8 +57,20 @@ console.log(media.toFixed(2));
 
 // 5. Imprima no console a soma do salário de todos as pessoas do sexo
 // Masculino
+let masculino = dinheiro => dinheiro.sexo ==='M';
+let obtemSalario = sal => sal.salario;
+let totalSalario = (sal, salAtual) => {return sal + salAtual;}
+
+let totalHomens = data.filter(masculino).map(obtemSalario).reduce(totalSalario);
+console.log(totalHomens);
+
 // 6. Imprima no console a média do salário de todas as pessoas do sexo
 // Masculino
+let apenasMasculino = data.filter((imprimir)=> imprimir.sexo === 'M');
+let quantidadeHomens = apenasMasculino.length
+let mediaSalarioMasculino = totalHomens / quantidadeHomens;
+console.log(mediaSalarioMasculino.toFixed(2));
+
 // 7. Utilize a função Some, para descobrir se existe algum salário
 // superior a R$ 7.000, imprima verdadeiro no console caso exista, caso
 // contrário falso.
